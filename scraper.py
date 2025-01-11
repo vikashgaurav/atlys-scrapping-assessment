@@ -64,6 +64,3 @@ async def scrape_catalogue(settings: ScrapeSettings):
         json.dump(scraped_data, file, indent=4)
 
     return {"message": "Scraping completed", "scraped_items": len(scraped_data)}
-
-# Run the application using Uvicorn for testing
-# Command: uvicorn script_name:app --reload
